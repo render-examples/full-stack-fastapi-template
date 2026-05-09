@@ -47,8 +47,8 @@ projects:
             name: fastapi-backend
             runtime: docker
             plan: free
-            repo: https://github.com/Ho1yShif/full-stack-fastapi-template
-            branch: master
+            repo: https://github.com/render-examples/full-stack-fastapi-template
+            branch: main
             autoDeploy: true
             dockerfilePath: ./backend/Dockerfile
             dockerContext: .
@@ -80,8 +80,8 @@ projects:
           - type: web
             name: fastapi-frontend
             runtime: static
-            repo: https://github.com/Ho1yShif/full-stack-fastapi-template
-            branch: master
+            repo: https://github.com/render-examples/full-stack-fastapi-template
+            branch: main
             autoDeploy: true
             buildCommand: bun install --frozen-lockfile && bun run --filter frontend build
             staticPublishPath: frontend/dist
